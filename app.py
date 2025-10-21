@@ -17,7 +17,7 @@ output_data = load_json("output.json")
 # STEP 2 — Setup Streamlit Page
 # ==============================
 st.set_page_config(page_title="Job Application AI", layout="wide")
-st.title("💼 Smart Job Application System")
+st.title("Job Vacancy")
 st.markdown("Unggah CV kamu dan pilih lowongan yang ingin dilamar.")
 
 # ==============================
@@ -94,3 +94,4 @@ if uploaded_cv:
 
         st.markdown("### 🚧 Threats")
         st.markdown("\n".join([f"- {s}" for s in swot["threats"]]))
+
