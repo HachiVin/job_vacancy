@@ -24,12 +24,12 @@ st.markdown("Unggah CV kamu dan pilih lowongan yang ingin dilamar.")
 # STEP 3 — Pilih Job Vacancy
 # ==============================
 jobs = [vacancy_data["data"]["name"]]  # bisa diubah ke list banyak job nanti
-selected_job = st.selectbox("🧾 Pilih Lowongan Pekerjaan:", jobs)
+selected_job = st.selectbox("Pilih Lowongan Pekerjaan:", jobs)
 
 if selected_job:
     job = vacancy_data["data"]
 
-    st.subheader(f"📋 Detail Lowongan — {job['name']}")
+    st.subheader(f"Detail Lowongan — {job['name']}")
     col1, col2 = st.columns(2)
 
     with col1:
@@ -43,14 +43,14 @@ if selected_job:
         st.markdown(f"**Range Gaji:** Rp{job['minSalary']:,} - Rp{job['maxSalary']:,}")
         st.markdown(f"**Dibuat pada:** {job['createdAt']}")
 
-    with st.expander("📄 Deskripsi Pekerjaan"):
+    with st.expander("Deskripsi Pekerjaan"):
         st.markdown(job["description"])
 
 # ==============================
 # STEP 4 — Upload CV File
 # ==============================
 st.divider()
-st.subheader("📤 Unggah CV Kamu")
+st.subheader("Unggah CV Kamu")
 
 uploaded_cv = st.file_uploader("Pilih file CV (PDF saja)", type=["pdf"])
 
@@ -67,31 +67,32 @@ if uploaded_cv:
     st.info("File tersimpan di folder `uploads/`")
 
     # Tombol Apply
-    if st.button("📨 Apply Job Sekarang"):
+    if st.button("Apply Job Sekarang"):
         st.success(f"Lamaran berhasil dikirim untuk posisi **{selected_job}**!")
         st.toast("CV berhasil dikirim!", icon="📬")
 
         # Simulasi hasil analisis AI (dari output.json)
         st.divider()
-        st.subheader("🤖 Hasil Analisis CV oleh AI")
+        st.subheader("Hasil Analisis CV oleh AI")
 
         st.markdown(f"**AI Recommendation for HR:** {output_data['ai_recommendation_for_hr']}")
         st.markdown(f"**AI Recommendation for Candidate:** {output_data['ai_recommendation_for_candidate']}")
 
-        st.markdown("### 🧩 Gap Analysis")
+        st.markdown("###  Gap Analysis")
         st.write(output_data["gap_analysis"])
 
         # SWOT
         swot = output_data["swot_analysis"]
-        st.markdown("### 💪 Strengths")
+        st.markdown("###  Strengths")
         st.markdown("\n".join([f"- {s}" for s in swot["strengths"]]))
 
-        st.markdown("### ⚠️ Weaknesses")
+        st.markdown("###  Weaknesses")
         st.markdown("\n".join([f"- {s}" for s in swot["weaknesses"]]))
 
-        st.markdown("### 🌱 Opportunities")
+        st.markdown("###  Opportunities")
         st.markdown("\n".join([f"- {s}" for s in swot["opportunities"]]))
 
-        st.markdown("### 🚧 Threats")
+        st.markdown("###  Threats")
         st.markdown("\n".join([f"- {s}" for s in swot["threats"]]))
+
 
