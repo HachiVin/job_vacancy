@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "message": "",
+  "data": {
+    "id": 1751,
+    "name": "Editor Video Intern",
+    "type": "Magang",
+    "showSalary": false,
+    "minSalary": 1500000,
+    "maxSalary": 1800000,
+    "province": {
+      "id": 16,
+      "name": "BANTEN"
+    },
+    "city": {
+      "id": 273,
+      "name": "KOTA TANGERANG SELATAN"
+    },
+    "minEducation": "d3",
+    "major": "Semua Jurusan",
+    "minYearExperience": "Fresh Graduate",
+    "skills": [
+      "Editor",
+      "Canva",
+      "Photoshop",
+      "Capcut",
+      "Premier Pro"
+    ],
+    "description": "**Kualifikasi:**\n\n1. Memiliki pengalaman di bidang desain grafis dan video editing\n2. Familiar dengan software editing (**_Premier Pro/CapCut/_aplikasi video editor sejenis**)\n3. Bisa menggunakan **_Canva_** untuk desain konten grafis sederhana\n4. Menguasai Photoshop menjadi nilai lebih\n5. Kreatif, mau belajar, dan terbiasa dengan tren konten digital \n6. Mahasiswa semester akhir / _fresh graduate_ dipersilahkan melamar\n\n**Job Desk:**\n\n1. Mengedit video untuk kebutuhan konten digital (_cutting, trimming, simple effect, audio sync_)\n2. Membuat desain visual sederhana menggunakan **Canva** (poster, feed, story, banner)\n3. Membantu tim kreatif dalam pembuatan konten media sosial\n4. Berkolaborasi dengan tim marketing untuk menyesuaikan konten sesuai _brand guideline_ ",
+    "company": {
+      "name": "PT Phitagoras Global Duta",
+      "logo": "",
+      "type": null
+    },
+    "requirements": [
+      "mbti",
+      "disc",
+      "spm",
+      "papikostick"
+    ],
+    "createdAt": "2025-10-01 13:53:53",
+    "modifiedAt": "2025-10-01 13:53:53"
+  }
+}
